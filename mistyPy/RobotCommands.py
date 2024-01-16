@@ -327,6 +327,27 @@ class RobotCommands:
         }
 
         return self.get_request("cameras/rgb", json=json)
+    
+    # def take_depth_picture(self) -> Response:
+            
+    #     """https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#takedepthpicture"""
+
+    #     return self.get_request("cameras/depth")
+
+    # def take_depth_picture(self):
+
+    #     endpoint = f"http://{self.ip}/api/cameras/depthParameters"
+        
+    #     try:
+    #         response = self.get_request(endpoint)
+    #         if response.status_code == 200:
+    #             depth_info = response.json()
+    #             return depth_info
+    #         else:
+    #             return None  # Handle the response error as needed
+    #     except:
+    #         print(f"Error in getting depth info from {endpoint}")
+    #         return None  # Handle the request exception as needed
 
     def get_python_output(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_python_output"""

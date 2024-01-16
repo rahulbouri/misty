@@ -71,6 +71,6 @@ def tts_all_i_ever_see(event):
 
 
 if __name__ == "__main__":
-    ip_address = "192.168.1.12"
+    ip_address = "192.168.1.101"
     misty = Robot(ip_address)
     start_skill()

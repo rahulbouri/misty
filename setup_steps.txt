@@ -1,0 +1,8 @@
+-create a virtual env with python=3.8.17 and other dependencies as mentioned in the repository
+-clone the GitHub repository using 'git clone https://github.com/MistyCommunity/Python-SDK.git'
+-cd into the repository and run 'python setup.py --build' and then run 'python setup.py --install'
+-now you are ready to establish a connection with the robot and run the code
+-connect misty with the app using bluetooth and then connect misty to the same wifi network as your computer
+-note down the ip address and paste them ip address in your browser to check if the connection has been established or not. if yes then you will see the misty dashboard giving you gui for basic misty controls.
+-make sure to have speech_interface module to run code for ASR and transcript generation, also note that certain libraries such as transformers, soundfile etc. are needed in the env for full functionality.
+-make sure to add speech_interface_modified.py file to speech_interface module before running the audio-capture-pipeline
